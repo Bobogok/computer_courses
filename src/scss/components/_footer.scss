@@ -1,0 +1,53 @@
+.footer {
+  height: 400px;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+  }
+
+  &__text {
+    text-align: center;
+    opacity: 0.5;
+    margin: 50px 0px;
+  }
+
+  &__form {
+    position: relative;
+    width: 510px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__input {
+    border-radius: 50px 0px 0px 50px;
+    opacity: 0.25;
+    width: 353px;
+    height: 44px;
+    position: absolute;
+    left: 2%;
+    z-index: -1;
+  }
+
+  &__button {
+    width: 160px;
+    height: 44px;
+    margin-right: 10px;
+    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  &__socials {
+    margin-top: 50px;
+  }
+
+  &__image {
+    margin: 0px 20px;
+  }
+}
