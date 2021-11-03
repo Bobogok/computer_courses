@@ -1,9 +1,10 @@
-.info {
+.main {
   background-image: url(../img/info/bg.png);
-  height: auto;
   // background-size: 100% 120%;
+  background-size: cover;
   height: 839px;
   background-repeat: no-repeat;
+
   &__inner {
     width: 70%;
     height: 100%;
