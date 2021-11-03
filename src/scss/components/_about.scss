@@ -1,7 +1,7 @@
 .about {
   &__inner {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 200px 0px;
   }
@@ -27,7 +27,7 @@
     }
   }
 
-  &__block-text {
+  &__info {
   }
 
   &__title {
@@ -38,6 +38,7 @@
   &__text {
     margin-top: 30px;
     font-size: 16px;
-    line-height: 160%;
+    line-height: 27px;
+    font-weight: 300;
   }
 }

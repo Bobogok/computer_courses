@@ -1,0 +1,47 @@
+.start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  &__inner {
+  }
+
+  &__title {
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    &::before {
+      content: url('../img/start/icon.png');
+      margin-right: 40px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    opacity: 0.5;
+    line-height: 25px;
+    font-weight: 300;
+  }
+
+  &__items {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 400px;
+  }
+
+  &__percent {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  &__rectangle {
+  }
+}
