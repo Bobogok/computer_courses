@@ -1,8 +1,8 @@
 .education {
   padding-top: 120px;
   height: 1300px;
+
   &__inner {
-    // height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -25,31 +25,54 @@
   }
 
   &__block-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 5px 40px 5px 0px;
-    & > div {
-      text-align: right;
-      position: relative;
-      margin-right: 40px;
-      &::before {
-        content: ' ';
-        padding: 1px 20px;
-        top: 44%;
-        right: -35.5%;
-        background-color: rgb(255, 255, 255);
-        opacity: 0.3;
-        position: absolute;
-      }
+  }
+
+  &__item-left {
+    margin-top: 20px;
+    margin-right: 60px;
+    width: 228px;
+    text-align: right;
+    position: relative;
+
+    &::before {
+      content: ' ';
+      width: 40px;
+      height: 2px;
+      top: 50%;
+      right: -28%;
+      background-color: rgb(255, 255, 255);
+      opacity: 0.3;
+      position: absolute;
     }
   }
 
-  &__item {
+  &__item-left + &__item-left {
+    margin-top: 95px;
+  }
+
+  &__item-right {
+    margin-top: 95px;
+    margin-left: 60px;
+    width: 228px;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 40px;
+      height: 2px;
+      top: 50%;
+      left: -28%;
+      background-color: rgb(255, 255, 255);
+      opacity: 0.3;
+      position: absolute;
+    }
+  }
+
+  &__item-left + &__item-left {
+    margin-top: 95px;
   }
 
   &__week {
-    font-size: 14px;
     opacity: 0.5;
     font-weight: 300;
   }
@@ -63,29 +86,7 @@
 
   &__bar-progress {
     background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
-    height: 700px;
+    height: 677px;
     width: 6px;
-  }
-
-  &__block-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-left: 40px;
-    & > div {
-      text-align: left;
-      position: relative;
-      margin: 30px 0px 30px 40px;
-
-      &::after {
-        content: ' ';
-        padding: 1px 20px;
-        top: 43%;
-        left: -35%;
-        background-color: rgb(255, 255, 255);
-        opacity: 0.3;
-        position: absolute;
-      }
-    }
   }
 }

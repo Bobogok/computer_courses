@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   position: fixed;
-  z-index: 1;
+  z-index: 99;
   &__inner {
     display: flex;
     justify-content: space-between;
