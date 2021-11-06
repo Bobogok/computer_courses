@@ -1,29 +1,30 @@
 .about {
+  padding-top: 200px;
+
   &__inner {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 200px 0px;
+    justify-content: space-between;
   }
 
   &__image {
+    position: relative;
     width: 500px;
     height: 500px;
-    position: relative;
 
     &::after {
-      content: url('../img/about/frame.png');
       position: absolute;
       top: 0%;
       z-index: 1;
+      content: url('../img/about/frame.png');
     }
 
     &::before {
-      content: url('../img/about/computer.png');
       position: absolute;
       bottom: -7%;
       left: 8%;
       z-index: 2;
+      content: url('../img/about/computer.png');
     }
   }
 
@@ -37,8 +38,8 @@
 
   &__text {
     margin-top: 30px;
+    font-weight: 300;
     font-size: 16px;
     line-height: 27px;
-    font-weight: 300;
   }
 }

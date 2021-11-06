@@ -1,29 +1,30 @@
 .start {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 50px 0;
+  justify-content: center;
+  padding-top: 230px;
 
   &__inner {
   }
 
   &__title {
-    height: auto;
     display: flex;
     align-items: center;
+    height: auto;
     margin-bottom: 40px;
+
     &::before {
-      content: url('../img/start/icon.png');
       margin-right: 40px;
+      content: url('../img/start/icon.png');
     }
   }
 
   &__text {
-    opacity: 0.5;
-    line-height: 25px;
-    font-weight: 300;
     margin-right: 3em;
+    font-weight: 300;
+    line-height: 25px;
+    opacity: 0.5;
   }
 
   &__items {
@@ -39,8 +40,8 @@
   }
 
   &__percent {
-    font-size: 36px;
     font-weight: 600;
+    font-size: 36px;
   }
 
   &__xxl-rectangle,

@@ -1,16 +1,15 @@
 .main {
-  background-image: url(../img/info/bg.png);
-  // background-size: 100% 120%;
-  background-size: cover;
   height: 839px;
+  background-image: url(../img/info/bg.png);
   background-repeat: no-repeat;
+  background-size: cover;
 
   &__inner {
-    width: 70%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 70%;
+    height: 100%;
   }
 
   &__title {
@@ -22,26 +21,26 @@
   }
 
   &__clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 102px;
     height: 112px;
-    background: #121212;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     margin-right: 30px;
+    background: #121212;
   }
 
   &__number {
+    color: $white;
+    font-weight: 500;
     font-size: 36px;
     line-height: 140%;
-    font-weight: 500;
-    color: $white;
   }
 
   &__date {
-    font-size: 16px;
     color: $white;
+    font-size: 16px;
     opacity: 0.4;
   }
 }

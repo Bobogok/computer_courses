@@ -1,17 +1,18 @@
 .statistics {
-  background-color: #121212;
   height: 130px;
+  background-color: #121212;
+
   &__inner {
-    height: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    height: 100%;
   }
 
   &__button {
-    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
     width: 169px;
     height: 44px;
+    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
     border-radius: 50px;
   }
 
@@ -19,10 +20,10 @@
   }
 
   &__peoples {
-    height: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 60px;
   }
 
   &__info {
@@ -49,30 +50,30 @@
 
   &__bar-wrapper {
     display: flex;
-    width: 714px;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 714px;
   }
 
   &__bar {
+    position: relative;
     width: 100%;
     height: 6px;
-    background-color: $white;
-    position: relative;
     margin-top: 10px;
+    background-color: $white;
 
     &::after {
-      content: ' ';
       position: absolute;
       width: 440px;
       height: 6px;
       background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+      content: ' ';
     }
   }
 
   &__bar-point {
     margin-top: 15px;
-    font-size: 16px;
     font-weight: 500;
+    font-size: 16px;
   }
 }

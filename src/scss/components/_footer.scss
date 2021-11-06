@@ -1,46 +1,47 @@
 .footer {
-  height: 400px;
+  padding-top: 200px;
+
   &__inner {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
 
   &__title {
   }
 
   &__text {
+    margin: 50px 0;
     text-align: center;
     opacity: 0.5;
-    margin: 50px 0px;
   }
 
   &__form {
     position: relative;
-    width: 510px;
     display: flex;
     justify-content: flex-end;
+    width: 510px;
   }
 
   &__input {
-    border-radius: 50px 0px 0px 50px;
-    opacity: 0.25;
-    width: 353px;
-    height: 44px;
     position: absolute;
     left: 2%;
     z-index: -1;
+    width: 353px;
+    height: 44px;
+    border-radius: 50px 0 0 50px;
+    opacity: 0.25;
   }
 
   &__button {
     width: 160px;
     height: 44px;
     margin-right: 10px;
-    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
-    border-radius: 50px;
     font-weight: 500;
     font-size: 16px;
+    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
   }
 
   &__socials {
@@ -48,6 +49,11 @@
   }
 
   &__image {
-    margin: 0px 20px;
+    margin: 0 20px;
+  }
+
+  &__copyright {
+    padding: 50px 0 30px 0;
+    font-size: 16px;
   }
 }
